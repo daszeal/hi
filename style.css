@@ -66,3 +66,29 @@ a:hover{
 background{
     background-color: black;
 }
+footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+  background-color: #3a3a3a;
+}
+
+.footer-content {
+  max-width: 80%;
+  margin: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.footer-links a {
+  margin-left: 1rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+    text-decoration: underline;
+    text-decoration: bold;
+}
