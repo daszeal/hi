@@ -68,7 +68,7 @@ background{
 }
 footer {
   margin-top: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   border-top: 1px solid #ddd;
   background-color: #000000;
 }
@@ -76,7 +76,8 @@ footer {
 .footer-content {
   max-width: 80%;
   margin: 10%;
-    margin-right: 30%;
+    margin-left: 1rem
+    margin-right: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
