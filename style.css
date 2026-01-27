@@ -67,8 +67,6 @@ background{
     background-color: black;
 }
 footer {
-  margin-top: 0.5rem;
-  padding: 0.5rem;
   border-top: 1px solid #ddd;
   background-color: #000000;
 }
@@ -77,7 +75,7 @@ footer {
   max-width: 80%;
   margin: 10%;
     margin-left: 1rem
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
