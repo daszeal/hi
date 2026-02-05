@@ -11,11 +11,31 @@
 {% include header.html %}
 <background-color: #000000;>
 <body>
+  <section class="hero">
   <h1>Hi!</h1>
-  <p>This is the personal website of Daszeal.</p><br>
-  <p>If you stumbled across this yourself, feel free to check it out, or promptly give yourself dementia.</p><br>
-  <p>I'm planning on using this website to post some random finds, so stay tuned cuz it's gonna take some time.</p><br>
-  <p>This website's currently under development. It will be finished before <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI">GTA VI</a> is released :)</p><br>
+  <p>Welcome to Daszeal's site.</p>
+</section>
+
+<section class="card-grid">
+
+  <a href="{{ '/posts/' | relative_url }}" class="card">
+    <h3>About me</h3>
+  </a>
+
+  <a href="{{ '/about/' | relative_url }}" class="card">
+    <h3>Most recent post</h3>
+  </a>
+
+  <a href="https://x.com/ddaszeal" class="card">
+    <h2>Contact me on X</h2>
+  </a>
+
+  <div class="card status-card">
+    <h3>Pronounce my name</h3>
+    <p>/ˈdas͡ziːl/</p>
+  </div>
+
+</section>
 </body>
 {% include footer.html %}
 </html>
