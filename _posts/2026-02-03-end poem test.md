@@ -1,10 +1,7 @@
-
 ---
 layout: post
 title: End Poem (Test)
 ---
-
-# End Poem (Test)
 
 I see the player you mean.
 
