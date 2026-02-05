@@ -186,6 +186,8 @@ footer {
 
 .about-content p {
   text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .ul li {
