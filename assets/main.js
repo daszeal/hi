@@ -10,3 +10,5 @@ document.querySelectorAll('.card').forEach(card => {
 
 const status = document.querySelector('.status-card p');
 status.textContent = "Test 2";
+
+fetch("https://daszeal.github.io/posts/feed.xml")
