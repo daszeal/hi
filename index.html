@@ -19,7 +19,7 @@ title: Home
 
 {% for post in site.posts limit:1 %}
   <a href="{{ post.url | relative_url }}" class="card">
-    <h2>Latest Post</h2>
+    <h3>Latest Post</h3>
     <p>{{ post.title }}</p>
   </a>
 {% endfor %}
