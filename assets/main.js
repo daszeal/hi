@@ -13,12 +13,20 @@ status.textContent = "why isnt this working";
 
 fetch("https://daszeal.github.io/posts/feed.xml")
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+document.addEventListener("DOMContentLoaded", () => {
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
   });
+
+  document.querySelectorAll('.reveal, .fade-in').forEach(el => {
+    observer.observe(el);
+  });
+
 });
 
 document.querySelectorAll('.reveal, .fade-in').forEach(el => {
