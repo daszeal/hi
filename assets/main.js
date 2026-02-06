@@ -16,22 +16,22 @@ fetch("https://daszeal.github.io/posts/feed.xml")
 document.addEventListener("DOMContentLoaded", () => {
 
 
+function initAnimations() {
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add("visible");
       }
     });
   });
 
-  document.querySelectorAll('.reveal, .fade-in').forEach(el => {
+  document.querySelectorAll(".fade-in, .reveal").forEach(el => {
     observer.observe(el);
   });
 
-});
-document.documentElement.classList.remove("no-js");
+}
 
-document.querySelectorAll('.reveal, .fade-in').forEach(el => {
-  observer.observe(el);
-});
+document.addEventListener("DOMContentLoaded", initAnimations);
+window.addEventListener("pageshow", initAnimations);
 });
