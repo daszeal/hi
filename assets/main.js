@@ -1,4 +1,4 @@
-console.log("676767HAHAHAHHAHAHA");
+console.log("676767 HAHAHAHHAHAHA");
 document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('mouseenter', () => {
     card.classList.add('active');
