@@ -13,13 +13,7 @@ status.textContent = "IT'S FINALLY WORKINGGG";
 
 fetch("https://daszeal.github.io/posts/feed.xml")
 
-document.addEventListener("DOMContentLoaded", () => {
-    initAnimations();
-  setTimeout(initAnimations, 100);
-  });
-
 function initAnimations() {
-
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -35,6 +29,13 @@ function initAnimations() {
 
 }
 
-document.addEventListener("DOMContentLoaded", initAnimations);
-window.addEventListener("pageshow", initAnimations);
+
+// Run when page loads
+document.addEventListener("DOMContentLoaded", () => {
+  initAnimations();
+  setTimeout(initAnimations, 100);
 });
+
+
+// Run when page is restored from cache
+window.addEventListener("pageshow", initAnimations);
