@@ -2,16 +2,15 @@
 layout: default
 ---
 
-<main class="post-content">
+<main>
 
-  <article>
+
     <h1>{{ page.title }}</h1>
-    <center><p>{{ page.date | date: "%B %d, %Y" }}</p></center>
+    <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
 <hr>
+    <article class="post-content">
     {{ content }}
     <br>
-    <br>
-
   </article>
 
 </main>
