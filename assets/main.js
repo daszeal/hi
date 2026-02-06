@@ -12,8 +12,6 @@ document.querySelectorAll('.card').forEach(card => {
 const status = document.querySelector('.status-card p');
 status.textContent = "IT'S FINALLY WORKINGGG";
 
-fetch("https://daszeal.github.io/posts/feed.xml")
-
 function initAnimations() {
 
   const observer = new IntersectionObserver(entries => {
