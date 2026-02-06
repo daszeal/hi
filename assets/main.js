@@ -1,4 +1,5 @@
 console.log("JS LOADED");
+document.documentElement.classList.remove("no-js");
 
 document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('mouseenter', () => {
