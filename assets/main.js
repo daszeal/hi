@@ -19,15 +19,16 @@ if (status) {
 
 function initAnimations() {
 
-  // Check if browser supports it
-  if (!("IntersectionObserver" in window)) {
-    console.warn("IntersectionObserver not supported. Falling back.");
+  // Fade in on load
+  document.querySelectorAll(".fade-in").forEach(el => {
+    el.classList.add("visible");
+  });
 
-    // Fallback: just show everything
+  // Scroll reveal
+  if (!("IntersectionObserver" in window)) {
     document.querySelectorAll(".reveal").forEach(el => {
       el.classList.add("visible");
     });
-
     return;
   }
 
