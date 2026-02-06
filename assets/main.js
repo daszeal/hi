@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+document.documentElement.classList.remove("no-js");
 
 document.querySelectorAll('.reveal, .fade-in').forEach(el => {
   observer.observe(el);
