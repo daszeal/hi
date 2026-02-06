@@ -165,6 +165,11 @@ footer {
   text-align: left;
 }
 
+.card {
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
