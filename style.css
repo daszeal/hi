@@ -271,7 +271,8 @@ footer {
   transition: all 0.8s ease;
 }
 
-.reveal.active {
+.reveal.visible {
+  opacity: 1;
   transform: translateY(0) scale(1);
 }
 
