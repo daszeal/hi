@@ -15,6 +15,7 @@ fetch("https://daszeal.github.io/posts/feed.xml")
 
 document.addEventListener("DOMContentLoaded", () => {
 
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -33,4 +34,4 @@ document.documentElement.classList.remove("no-js");
 document.querySelectorAll('.reveal, .fade-in').forEach(el => {
   observer.observe(el);
 });
-
+});
