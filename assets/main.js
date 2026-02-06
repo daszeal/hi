@@ -1,4 +1,5 @@
-console.log("676767 HAHAHAHHAHAHA");
+console.log("JS LOADED");
+
 document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('mouseenter', () => {
     card.classList.add('active');
@@ -14,27 +15,39 @@ status.textContent = "IT'S FINALLY WORKINGGG";
 
 function initAnimations() {
 
-  const observer = new IntersectionObserver(entries => {
+  // Check if browser supports it
+  if (!("IntersectionObserver" in window)) {
+    console.warn("IntersectionObserver not supported. Falling back.");
+
+    // Fallback: just show everything
+    document.querySelectorAll(".reveal").forEach(el => {
+      el.classList.add("visible");
+    });
+
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // animate once
       }
     });
+  }, {
+    threshold: 0.15
   });
 
-  document.querySelectorAll(".fade-in, .reveal").forEach(el => {
+  document.querySelectorAll(".reveal").forEach(el => {
     observer.observe(el);
   });
-
 }
 
-
 // Run when page loads
-document.addEventListener("DOMContentLoaded", () => {
-  initAnimations();
-  setTimeout(initAnimations, 100);
-});
+window.addEventListener("load", initAnimations);
 
-
-// Run when page is restored from cache
+// Run when coming back via cache
 window.addEventListener("pageshow", initAnimations);
+
+
+
