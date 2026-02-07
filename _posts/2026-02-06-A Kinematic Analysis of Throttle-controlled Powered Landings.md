@@ -82,7 +82,7 @@ $$
 n=(\frac{v^2_{initial}}{2h}+g)\frac{m}{F_{thrust}}
 $$
 
-To ensure a safe and fuel-efficient descent, the on-board flight control system should adjust the throttle to that $n$ value, such that the vehicle’s state vector lies tangent to that *TWR*’s optimal landing burn line.
+To ensure a safe and fuel-efficient descent, the on-board flight control system should adjust the throttle to that $$n$$ value, such that the vehicle’s state vector lies tangent to that *TWR*’s optimal landing burn line.
 
 ### Conclusion
 In this model, a low-throttle, high-altitude burn is kinematically equivalent to a full-throttle, low-altitude burn. In reality, liquid-based rocket engines have a minimum throttle limit, which will prevent high-altitude landing burns from taking place. In addition, a higher altitude increases gravity losses of fuel, making it less fuel-efficient than a burn starting at a lower altitude. 
