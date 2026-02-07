@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: about
 title: About
 permalink: /about/
 ---
 
-<body>
-  <h1>About</h1>
-  <main class="about-content fade-in">
+# About
 
 Hi there!
 
