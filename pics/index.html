@@ -1,1 +1,28 @@
+---
+layout: default
+title: Pics
+---
 
+<h1>Pics</h1>
+
+<div class="photo-grid">
+
+  {% for photo in site.photos %}
+
+    <a href="{{ photo.url }}" class="photo-card">
+
+      <img
+        src="{{ photo.image }}"
+        alt="{{ photo.title }}"
+      >
+
+      <div class="photo-overlay">
+        <h3>{{ photo.title }}</h3>
+        <p>{{ photo.description }}</p>
+      </div>
+
+    </a>
+
+  {% endfor %}
+
+</div>
