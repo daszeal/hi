@@ -6,4 +6,4 @@ date: 2026-02-07
 description: Booster touching down in Mlorba, Kerbin.
 ---
 
-Early KSP days. Did not know probes existed. 
+Early days playing KSP. Did not know probes existed. 
