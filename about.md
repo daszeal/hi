@@ -24,5 +24,3 @@ My main points of contact are in the footer links. I am most active on X ([@ddas
 
 SpaceX follower. Space Shuttle lover. Ad astra 🚀
 
-  </main>
-</body>
