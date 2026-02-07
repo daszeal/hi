@@ -5,4 +5,4 @@ permalink: /:year/:month/:day/:title/
 collections:
   photos:
     output: true
-    permalink: /photos/:name/
+    permalink: /pics/:name/
