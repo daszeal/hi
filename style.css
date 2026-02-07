@@ -198,8 +198,11 @@ footer {
 }
 
 .card:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+  transform: translateY(-6px) scale(1.03);
+  filter: brightness(1.08);
+
+  box-shadow:
+    0 15px 30px rgba(0,0,0,0.4);
 }
 .card a p {
   text-decoration: none;
