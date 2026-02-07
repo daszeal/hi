@@ -1,7 +1,7 @@
 ---
 layout: photo
 title: Blue Space Transfer Vehicle to Jool
-image: assets/photos/BlueSpaceTransferVehicletoJool.png
+image: /assets/photos/BlueSpaceTransferVehicletoJool.png
 date: 2026-02-07
 description: Blue Space assembled in Low Kerbin Orbit.
 ---
