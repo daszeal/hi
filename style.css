@@ -181,14 +181,11 @@ footer {
   transform: scale(1.05);
   filter: brightness(1.1);
 }
-.card a {
+.card a p {
   text-decoration: none;
   line-height: 1.6
 }
-.card p {
-  text-decoration: none;
-  line-height: 1.6
-}
+
 .about-content {
     text-align: left;
     color: white;
