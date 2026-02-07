@@ -1,7 +1,7 @@
 ---
 layout: photo
 title: Booster V2 Touchdown
-image: assets/photos/Boostertouchdown3.png
+image: /assets/photos/Boostertouchdown3.png
 date: 2026-02-07
 description: Booster landed outside the Kerbal Space Center.
 ---
