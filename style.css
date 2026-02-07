@@ -168,7 +168,6 @@ footer {
 }
 
 .card {
-  outline: 2px solid red;
   position: relative;
 
   height: 320px; /* adjust later */
