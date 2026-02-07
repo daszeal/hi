@@ -7,7 +7,7 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <img
-    src="{{ page.image }}"
+    src="{{ page.image | relative_url }}"
     alt="{{ page.title }}"
     class="photo-full"
   >
