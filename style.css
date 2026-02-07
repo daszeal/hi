@@ -211,7 +211,9 @@ footer {
   box-shadow:
     0 15px 30px rgba(0,0,0,0.4);
 }
-.card a p {
+.card h3,
+.card p {
+  margin: 0.5rem, 0;
   text-decoration: none;
   line-height: 1.6
 }
