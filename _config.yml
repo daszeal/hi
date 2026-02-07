@@ -3,6 +3,6 @@ url: "https://daszeal.github.io"
 permalink: /:year/:month/:day/:title/
 
 collections:
-  photos:
+  pics:
     output: true
     permalink: /pics/:name/
