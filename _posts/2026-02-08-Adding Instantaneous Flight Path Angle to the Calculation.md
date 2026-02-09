@@ -72,7 +72,7 @@ $$a = \frac{y_2 - b(x_2) - c}{(x_2)^2}$$
 
 $$a = \frac{0 - cot(\gamma)(x_{target}) - h_{burn}}{(x_{target})^2}$$
 
-The final variable we have to solve for it $$x_target$$, the downrange distance to our landing zone. This can be found in a number of ways, such as radar, but can also be calculated by multiplying the altitude to the tangent of the angle to the landing site.
+The final variable we have to solve for it $$x_{target}$$, the downrange distance to our landing zone. This can be found in a number of ways, such as radar, but can also be calculated by multiplying the altitude to the tangent of the angle to the landing site.
 
 $$tan(\theta) = \frac{x_{target}}{h_{burn}}$$
 
