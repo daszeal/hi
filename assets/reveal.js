@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!section) return;
 
     const top = section.getBoundingClientRect().top;
-    const trigger = window.innerHeight * 0.7;
+    const trigger = window.innerHeight * 1.5;
 
     if (top < trigger) {
 
