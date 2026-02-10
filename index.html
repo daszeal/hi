@@ -3,47 +3,54 @@ layout: default
 title: Home
 ---
 <!DOCTYPE html>
-
 <background-color: #000000;>
 <body>
-  <section class="hero fade-in">
-  <h1 class="fade-in delay-1">Hi!</h1>
-  <p class="fade-in delay-2">Welcome to Daszeal's site.</p>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm Daszeal</h1>
+    <p>
+      I like rockets.
+    </p>
+  </div>
 </section>
 
-<section class="card-grid delay-3">
+<section class="home-cards">
+
+  <div class="card-grid">
 
   <a href="{{ '/about/' | relative_url }}" class="card has-image reveal" style="--bg:url('/assets/images/snow.png')">
-    <h3>About me</h3>
-    <p>The owner of this website, that is.</p>
-  </a>
-
-{% for post in site.posts limit:1 %}
-  <a href="{{ post.url | relative_url }}" class="card has-image reveal" style="--bg:url('/assets/images/twrgraph.png')">
-    <h3>Latest Post</h3>
-    <p>{{ post.title }}</p>
-  </a>
-{% endfor %}
+      <h3>About me</h3>
+      <p>The owner of this website, that is.</p>
+    </a>
   
-  <a href="https://en.wikipedia.org/wiki/Help:IPA/English" class="card reveal centered">
-    <h3>Pronounce my name</h3>
-    <p>/ˈdas͡ziːl/</p>
-  </a>
-
-  <a href="{{ '/pics/' | relative_url }}" class="card has-image reveal" style="--bg:url('/assets/images/falcon9landing.png')"> 
-    <h3>Pics</h3>
-    <p>Mostly taken by me.</p>
-  </a>
-
-  <a class="card status-card reveal centered" href="#">
-    <h3>Status</h3>
-    <p>{{ site.data.status.text }}</p>
-  </a>
+  {% for post in site.posts limit:1 %}
+    <a href="{{ post.url | relative_url }}" class="card has-image reveal" style="--bg:url('/assets/images/twrgraph.png')">
+      <h3>Latest Post</h3>
+      <p>{{ post.title }}</p>
+    </a>
+  {% endfor %}
+    
+    <a href="https://en.wikipedia.org/wiki/Help:IPA/English" class="card reveal centered">
+      <h3>Pronounce my name</h3>
+      <p>/ˈdas͡ziːl/</p>
+    </a>
   
-  <a class="card centered status-card reveal" href="#"> 
-    <h3>Now</h3>
-    <p>{{ site.data.now }}</p>
-  </a>
+    <a href="{{ '/pics/' | relative_url }}" class="card has-image reveal" style="--bg:url('/assets/images/falcon9landing.png')"> 
+      <h3>Pics</h3>
+      <p>Mostly taken by me.</p>
+    </a>
+  
+    <a class="card status-card reveal centered" href="#">
+      <h3>Status</h3>
+      <p>{{ site.data.status.text }}</p>
+    </a>
+    
+    <a class="card centered status-card reveal" href="#"> 
+      <h3>Now</h3>
+      <p>{{ site.data.now }}</p>
+    </a>
+
+  </div>
 
 </section>
 </body>
