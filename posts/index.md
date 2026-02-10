@@ -7,7 +7,14 @@ title: Posts
 <ul>
 {% for post in site.posts %}
   <li>
-    <a href="{{ post.url | relative_url }}" class="post-links" >{{ post.title }}</a>
+    {% for post in site.posts %}
+  <div class="post-item">
+    <span class="post-date">
+      {{ post.date | date: "%b %d, %Y" }}
+    </span>
+    <a href="{{ post.url | relative_url }}" class="post-links">{{ post.title }}</a>
+  </div>
+  {% endfor %}
   </li>
 {% endfor %}
 </ul>
