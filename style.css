@@ -151,6 +151,37 @@ footer {
     height: auto;
     align: left;
 }
+
+.hero {
+  height: 100vh;
+
+  background:
+    linear-gradient(to bottom, black, transparent),
+    url("/assets/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
 .post-content {
     text-align: left;
     color: white;
