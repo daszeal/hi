@@ -9,7 +9,7 @@ title: Posts
 
 {% for month in postsByMonth %}
 
-<h2>{{ month.name }}</h2>
+<h3>{{ month.name }}</h3>
 
 <ul>
 {% for post in month.items %}
