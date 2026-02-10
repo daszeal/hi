@@ -182,6 +182,10 @@ footer {
   opacity: 0.8;
 }
 
+.home-cards {
+  padding: 4rem 2rem;
+}
+
 .post-content {
     text-align: left;
     color: white;
