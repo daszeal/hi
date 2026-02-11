@@ -106,19 +106,20 @@ footer {
 
 .header-inner {
   max-width: 1200px;
+  max-height: 120px;
   margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 2rem; /* spacing between links */
+  gap: 1.5rem; /* spacing between links */
 }
 
 .site-nav a {
@@ -519,7 +520,8 @@ footer {
   flex-direction: column;
 }
 .logo {
-  height: 42px;   /* adjust if needed */
+  height: 5rem;   /* adjust if needed */
   width: auto;
-  display: block;
+  margin-bottom: 2.5rem;
 }
+
