@@ -6,3 +6,8 @@ collections:
   pics:
     output: true
     permalink: /pics/:name/
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
