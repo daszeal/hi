@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<article class="project-page">
+
+  <!-- Title -->
+  <h1 class="project-title">{{ page.title }}</h1>
+
+  <!-- Meta -->
+  <div class="project-meta">
+
+    {% if page.date %}
+      <span class="project-date">
+        {{ page.date | date: "%B %d, %Y" }}
+      </span>
+    {% endif %}
+
+    {% if page.status %}
+      <span class="project-status status-{{ page.status }}">
+        {{ page.status | capitalize }}
+      </span>
+    {% endif %}
+
+  </div>
+
+  <!-- Content / Empty State -->
+  {% if content != "" %}
+    <div class="project-content">
+      {{ content }}
+    </div>
+  {% else %}
+
+    <div class="project-empty">
+
+      <p class="empty-title">
+        Hmm. Nothing here yet.
+      </p>
+
+      <p class="empty-sub">
+        Project under construction.<br>
+      </p>
+
+    </div>
+
+  {% endif %}
+
+</article>
+
+
+<!-- Project List -->
+<section class="project-list-section">
+
+  <h3>All Projects</h3>
+
+  <div class="project-list">
+
+    {% assign sorted = site.projects | sort: "date" | reverse %}
+
+    {% for project in sorted %}
+
+      <a href="{{ project.url | relative_url }}"
+         class="project-card">
+
+        <h3>{{ project.title }}</h3>
+
+        <div class="project-card-meta">
+
+          {% if project.date %}
+            <span>
+              {{ project.date | date: "%Y-%m-%d" }}
+            </span>
+          {% endif %}
+
+          {% if project.status %}
+            <span class="status-{{ project.status }}">
+              {{ project.status | capitalize }}
+            </span>
+          {% endif %}
+
+        </div>
+
+      </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>
