@@ -2,7 +2,7 @@
 layout: photo
 title: Question Mark 3+ (?3+) Reentering Atmosphere
 image: /assets/photos/QM3VerticalReentry.png
-date: 2026-02-11
+date: 2026-02-12
 description: Test flight of the latest SSTO model.
 ---
 
