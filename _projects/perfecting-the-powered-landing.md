@@ -14,8 +14,8 @@ Developing a simple yet effective solution to performing the suicide burn (terme
 - Enabling development of flight computers for more spacecraft capable of powered landing, on Earth or on other celestial bodies
 
 ### Timeline
-- Jan 2026: Initiated project, ran simple derivations assuming minimal horizontal velocity
-- Feb 2026: Improved on given limitations, including correcting to include horizontal momentum (calculated via flight path angle)
+- Jan. 2026: Initiated project, ran simple derivations assuming minimal horizontal velocity
+- Feb. 2026: Improved on given limitations, including correcting to include horizontal momentum (calculated via flight path angle)
 
 ### Outputs
 - 1 draft paper in Overleaf
