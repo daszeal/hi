@@ -35,4 +35,4 @@ function safeInit() {
 
 window.addEventListener("load", safeInit);
 
-
+if (entry.isIntersecting && !entry.target.classList.contains("visible")) {
