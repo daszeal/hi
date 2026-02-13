@@ -7,7 +7,7 @@ status: active
 
 Developing a simple yet effective solution to performing the suicide burn (termed *hoverslam* by SpaceX).
 
-Plain English: Finding how to land falling things using rocket engines, [example here](https://www.youtube.com/watch?v=ZCBE8ocOkAQ).
+Plain English: Finding how to land falling things using rocket engines, [example here](https://www.youtube.com/watch?v=HZmcicruJmw).
 
 ### Goals
 - Requires minimal data input from on-board sensors;
