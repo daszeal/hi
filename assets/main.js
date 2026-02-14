@@ -83,36 +83,41 @@ const words = [
   "Peter Jiang",
   "蒋睿倾",
   "daszeal",
-  "Peter",
+  "Peter"
 ];
 
 let wordIndex = 0;
 let charIndex = 0;
-let deleting = false;
+let isDeleting = false;
+
+const typeSpeed = 80;     // typing speed
+const deleteSpeed = 50;  // deleting speed
+const holdTime = 2000;   // pause after finish
 
 const el = document.getElementById("typing");
 
 function typeLoop() {
+  const word = words[wordIndex];
 
-  const current = words[wordIndex];
-
-  if (!deleting) {
-    el.textContent = current.slice(0, charIndex++);
+  if (!isDeleting) {
+    el.textContent = word.slice(0, charIndex++);
   } else {
-    el.textContent = current.slice(0, charIndex--);
+    el.textContent = word.slice(0, charIndex--);
   }
 
-  if (charIndex === current.length + 1) {
-    deleting = true;
-    setTimeout(() => {}, 800);
+  let delay = isDeleting ? deleteSpeed : typeSpeed;
+
+  if (!isDeleting && charIndex === word.length + 1) {
+    delay = holdTime;
+    isDeleting = true;
   }
 
-  if (charIndex === 0 && deleting) {
-    deleting = false;
+  if (isDeleting && charIndex === 0) {
+    isDeleting = false;
     wordIndex = (wordIndex + 1) % words.length;
   }
 
-  setTimeout(typeLoop, deleting ? 50 : 90);
+  setTimeout(typeLoop, delay);
 }
 
 typeLoop();
