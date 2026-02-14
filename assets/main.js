@@ -60,3 +60,21 @@ window.addEventListener("load", setupAnimations);
 
 // Cache restore
 window.addEventListener("pageshow", setupAnimations);
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const siteHost = window.location.hostname;
+
+  document.querySelectorAll("a[href]").forEach(link => {
+
+    const url = new URL(link.href, window.location.origin);
+
+    // If link goes to another site
+    if (url.hostname !== siteHost) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    }
+
+  });
+
+});
