@@ -67,7 +67,7 @@ a{
     transition: color 0.2s ease;
 }
 
-a::after {
+a:not(.card)::after {
   content: "";
   position: absolute;
 
@@ -89,7 +89,7 @@ a:hover {
   text-decoration-color: transparent;
 }
 
-a:hover::after {
+a:not(.card):hover::after {
   transform: scaleX(1);
 }
 
@@ -99,14 +99,6 @@ a.no-animation::after {
 
 a.no-animation:hover {
   text-decoration-color: currentColor;
-}
-
-a.no-underline {
-  text-decoration: none;
-}
-
-a.no-underline:hover {
-  text-decoration: none;
 }
 
 background{
@@ -297,7 +289,7 @@ a:not(.card):hover::after {
 }
 
 .card:hover {
-  transform: translateY(-6px) scale(1.03);
+  transform: translateY(-6px) scale(1.05);
   filter: brightness(1.08);
 
   box-shadow:
@@ -400,10 +392,6 @@ a:not(.card):hover::after {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0) scale(1);
-}
-
-.card:hover {
-  transform: translateY(0) scale(1.05);
 }
 
 .no-js .fade-in,
