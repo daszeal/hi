@@ -5,15 +5,12 @@ let observer = null;
 
 function setupAnimations() {
 
-  // Fade in immediately
+  // Fade in on load
   document.querySelectorAll(".fade-in").forEach(el => {
     el.classList.add("visible");
   });
 
-  // Kill old observer
-  if (observer) {
-    observer.disconnect();
-  }
+  if (observer) observer.disconnect();
 
   // Fallback
   if (!("IntersectionObserver" in window)) {
@@ -23,17 +20,12 @@ function setupAnimations() {
     return;
   }
 
-  observer = new IntersectionObserver((entries) => {
+  observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-
-      if (entry.isIntersecting &&
-          !entry.target.classList.contains("visible")) {
-
+      if (entry.isIntersecting) {
         entry.target.classList.add("visible");
         observer.unobserve(entry.target);
-
       }
-
     });
   }, {
     threshold: 0.25
