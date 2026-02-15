@@ -160,10 +160,6 @@ footer {
   font-size: 1.1rem;
 }
 
-.site-nav a:hover {
-  text-decoration: underline;
-}
-
 .hero {
   height: 100vh;
 
@@ -809,7 +805,6 @@ footer {
 
 .project-back a:hover {
   opacity: 1;
-  text-decoration: underline;
 }
 #typing::after {
   content: "|";
