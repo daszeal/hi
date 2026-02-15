@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Kinematic Analysis of Throttle-controlled Powered Landings
+description: How to land a rocket
 ---
 
 SpaceX, NASA, Blue Origin, and many other aerospace agencies have all nearly perfected the suicide burn: a landing maneuver where a spacecraft fires its landing engines at the last possible moment so that vertical velocity reaches zero as it touches the ground, requiring the simultaneous management of altitude, fuel, and vertical velocity. This, however, requires the precise calculations done almost instantly by flight computers, presenting a problem when such resources are limited. In this article, we will provide a solution to this problem: a simple algorithm that can be used to calculate parameters for a rapidly descending vehicle given its velocity and altitude at the predefined re-ignition window, helping to set the baseline reference for flight control computers.
