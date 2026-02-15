@@ -11,8 +11,8 @@ Developing a simple yet effective solution to performing the suicide burn (terme
 Plain English: Finding how to land falling things using rocket engines, [example here](https://www.youtube.com/watch?v=HZmcicruJmw).
 
 ### Goals
-- Requires minimal data input from on-board sensors;
-- Effectively cuts all velocity to zero once on the landing site;
+- Requires minimal data input from on-board sensors, where no predictions for altitude or velocity are necessary;
+- Effectively cuts all velocity to zero once on the landing site by firing engines at a specific throttle given current circumstances;
 - Computationally simple, enabling quick correction adjustments;
 - Enabling development of flight computers for more spacecraft capable of powered landing, on Earth or on other celestial bodies.
 
