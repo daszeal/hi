@@ -3,6 +3,7 @@ layout: project
 title: Perfecting the Powered Landing
 date: 2026-01-27
 status: active
+description: Developing a simple yet effective solution to performing the suicide burn.
 ---
 
 Developing a simple yet effective solution to performing the suicide burn (termed *hoverslam* by SpaceX).
