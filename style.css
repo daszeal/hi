@@ -68,6 +68,27 @@ a:hover{
 
     transition: color 0.2s ease;
 }
+
+a::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: white;
+
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+}
+
+a:hover::after {
+  transform: translateX(0);
+}
+
 background{
     background-color: black;
 }
