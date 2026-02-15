@@ -60,6 +60,13 @@ a{
 a:hover{
     text-decoration: underline;
     font-weight:400;
+    position: relative;   /* needed for underline */
+    color: white;
+    text-decoration: none;
+
+    padding-bottom: 4px;  /* space for underline */
+
+    transition: color 0.2s ease;
 }
 background{
     background-color: black;
